@@ -1,3 +1,8 @@
+body{
+    background-image: url("./images/banner-img.jpg");
+    
+    
+}
 
 form {
     border: 3px solid #f1f1f1;
@@ -34,6 +39,7 @@ form {
 
   .hotel{
       text-align: center;
+      color: white;
       
   }
   
