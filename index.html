@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Alim</title>
+    <link rel="stylesheet" href="./Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header" id="header">
+      <div class="head-top">
+        <div class="site-name">
+          <span>HOTEL-ALIM</span>
+        </div>
+        <div class="site-nav">
+          <span id="nav-btn">MENU <i class="fas fa-bars"></i></span>
+        </div>
+      </div>
+
+      <div class="head-bottom flex">
+        <h2>NICE AND COMFORTABLE PLACE TO STAY</h2>
+        <p>
+          Alim Hotel, Exhibition Road, Patna welcomes you with cheery greetings,
+          a friendly smile and a whiff of signature Rose fragrance. Alim Hotels
+          is the only midscale business and leisure hotels that uplift your
+          spirits at the end of a long day. Alim ‘close to home’ comfort helps
+          you unwind with its smart in-room amenities, vibrant café, pool and
+          fitness center. All this, at an unbeatable value.
+        </p>
+        <button type="button" class="head-btn">GET STARTED</button>
+      </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- side navbar -->
+    <div class="sidenav" id="sidenav">
+      <span class="cancel-btn" id="cancel-btn">
+        <i class="fas fa-times"></i>
+      </span>
+
+      <ul class="navbar">
+        <li><a href="#header">home</a></li>
+        <li><a href="#services">services</a></li>
+        <li><a href="#rooms">rooms</a></li>
+        <li><a href="#customers">customers</a></li>
+      </ul>
+      <button class="btn sign-up">sign up</button>
+      <button class="btn log-in">log in</button>
+    </div>
+    <!-- end of side navbar -->
+
+    <!-- fullscreen modal -->
+    <div id="modal"></div>
+    <!-- end of fullscreen modal -->
+
+    <!-- body content  -->
+    <section class="services sec-width" id="services">
+      <div class="title">
+        <h2>services</h2>
+      </div>
+      <div class="services-container">
+        <!-- single service -->
+        <article class="service">
+          <div class="service-icon">
+            <span>
+              <i class="fas fa-utensils"></i>
+            </span>
+          </div>
+          <div class="service-content">
+            <h2>Food Service/ Food Runner</h2>
+            <p>
+              There are many different types of food and beverage service types
+              or procedures, but the major category of the food service is 1)
+              Plate Service, 2) Cart Service, 3) Plater Service, 4) Buffet
+              Service and 5) Family style service.
+            </p>
+            <button type="button" class="btn">Know More</button>
+          </div>
+        </article>
+        <!-- end of single service -->
+        <!-- single service -->
+        <article class="service">
+          <div class="service-icon">
+            <span>
+              <i class="fas fa-swimming-pool"></i>
+            </span>
+          </div>
+          <div class="service-content">
+            <h2>Refreshment</h2>
+            <p>
+              Certain tactics never fail. Offering your guests a little amuse
+              bouche or free beverage upon arrival is an excellent way to get
+              them in a good mood after the stress and exhaustion of travel,
+              helping to set the pace for the rest of their stay. Most hoteliers
+              are aware of this in a general sense, but it is the execution
+              where we often stumble. The expected welcome refreshment is a
+              bottle of wine, a small cheese tray, a fruit place, crackers,
+              cookies or any combination of the five. Nowadays, though, you must
+              look beyond the perfunctory and truly own this aspect of the guest
+              experience if you are to make a lasting impression.
+            </p>
+            <button type="button" class="btn">Know More</button>
+          </div>
+        </article>
+        <!-- end of single service -->
+        <!-- single service -->
+        <article class="service">
+          <div class="service-icon">
+            <span>
+              <i class="fas fa-broom"></i>
+            </span>
+          </div>
+          <div class="service-content">
+            <h2>Housekeeping</h2>
+            <p>
+              Housekeeping may be defined as ‘provision of a clean, comfortable,
+              safe and aesthetically appealing environment’. By another
+              definition, ‘housekeeping is an operational department in a hotel,
+              which is responsible for cleanliness, maintenance, aesthetic
+              upkeep of rooms, public areas, back areas and the surroundings.
+            </p>
+            <button type="button" class="btn">Know More</button>
+          </div>
+        </article>
+        <!-- end of single service -->
+        <!-- single service -->
+        <article class="service">
+          <div class="service-icon">
+            <span>
+              <i class="fas fa-door-closed"></i>
+            </span>
+          </div>
+          <div class="service-content">
+            <h2>Room Security</h2>
+            <p>
+              Hotel guest room security may be enhanced by the use of security
+              equipment such as hotel/motel function locks, safety chains, and
+              similar devices. Secondary access limiting devices on sliding
+              glass, balcony, and connecting room doors, access limiting devices
+              for operational windows, a guest room telephone or another
+              communication device available for use 24 hours a day, a peephole
+              in or window next to the guest room door etc.
+            </p>
+            <button type="button" class="btn">Know More</button>
+          </div>
+        </article>
+        <!-- end of single service -->
+      </div>
+    </section>
+
+    <div class="book">
+      <form class="book-form">
+        <div class="form-item">
+          <label for="checkin-date">Check In Date: </label>
+          <input type="date" id="chekin-date" />
+        </div>
+        <div class="form-item">
+          <label for="checkout-date">Check Out Date: </label>
+          <input type="date" id="chekout-date" />
+        </div>
+        <div class="form-item">
+          <label for="adult">Adults: </label>
+          <input type="number" min="1" value="1" id="adult" />
+        </div>
+        <div class="form-item">
+          <label for="children">Children: </label>
+          <input type="number" min="1" value="1" id="children" />
+        </div>
+        <div class="form-item">
+          <label for="rooms">Rooms: </label>
+          <input type="number" min="1" value="1" id="rooms" />
+        </div>
+        <div class="form-item">
+          <input type="submit" class="btn" id="book-btn" value="Book Now" />
+        </div>
+      </form>
+    </div>
+
+    <section class="rooms sec-width" id="rooms">
+      <div class="title">
+        <h2>rooms</h2>
+      </div>
+      <div class="rooms-container">
+        <!-- single room -->
+        <article class="room">
+          <div class="room-image">
+            <img src="images/img1.jpg" alt="room image" />
+          </div>
+          <div class="room-text">
+            <h3>Luxury Rooms</h3>
+            <ul>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Free Wi-Fi
+              </li>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Fully Air Conditioning.
+              </li>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                8 More
+              </li>
+            </ul>
+            <p>
+              Pamper yourself by booking a stay at this charming room, which
+              offers beautiful city views and elegant floor-to-ceiling windows.
+              The contemporary and sleek decor of this room is a treat to the
+              eyes. The en-suite bathroom features bath amenities by Forest
+              Essentials and a walk-in shower. This room also offers a pillow
+              menu and a 43-inch flat-screen TV.
+            </p>
+
+            <p class="rate"><span>Rs 12000.00/ /</span> Per Night</p>
+            <button type="button" class="btn">book now</button>
+          </div>
+        </article>
+        <!-- end of single room -->
+        <!-- single room -->
+        <article class="room">
+          <div class="room-image">
+            <img src="images/img2.jpg" alt="room image" />
+          </div>
+          <div class="room-text">
+            <h3>President Suit</h3>
+            <ul>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Free Wi-Fi.
+              </li>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                24*7 Room Service.
+              </li>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                14 More
+              </li>
+            </ul>
+            <p>
+              These picturesque sea-facing suites are carefully designed and
+              lavishly appointed offering panoramic views of the Arabian Sea.
+              With a large living area, expansive bedroom and a marble-finished
+              bathroom with a tub, these suites are spacious and airy. The
+              suites also boast of a lovely balcony that overlooks the Gateway
+              of India. These suites includes access to buffet breakfast at the
+              Sea Lounge or Shamiana, high-tea at the Palace Lounge from 1530
+              hrs to 1730 hrs, daily evening cocktail hours at the Palace Lounge
+              from 1830 hrs to 2000 hrs, 02 pieces of garments for ironing per
+              stay and 01-way airport transfers. Service of hot and soft
+              beverages from 0900 hrs to 2300 hrs at the Palace Lounge.
+              Complimentary Access to meeting room at Business Centre for a
+              period of 02 hours (per stay) – Subject to Availability.
+            </p>
+
+            <p class="rate"><span>Rs 30000.00/</span> Per Night</p>
+            <button type="button" class="btn">book now</button>
+          </div>
+        </article>
+        <!-- end of single room -->
+        <!-- single room -->
+        <article class="room">
+          <div class="room-image">
+            <img src="images/img3.jpg" alt="room image" />
+          </div>
+          <div class="room-text">
+            <h3>Delux Rooms</h3>
+            <ul>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Free Wi-Fi.
+              </li>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Fully Air Conditioning.
+              </li>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                10 More
+              </li>
+            </ul>
+            <p>
+              Pamper yourself by booking a stay at this charming room, which
+              offers beautiful city views and elegant floor-to-ceiling windows.
+              The contemporary and sleek decor of this room is a treat to the
+              eyes. The en-suite bathroom features bath amenities by Forest
+              Essentials and a walk-in shower. This room also offers a pillow
+              menu and a 43-inch flat-screen TV.
+            </p>
+
+            <p class="rate"><span>Rs 8000.00/</span> Per Night</p>
+            <button type="button" class="btn">book now</button>
+          </div>
+        </article>
+        <!-- end of single room -->
+      </div>
+    </section>
+
+    <section class="customers" id="customers">
+      <div class="sec-width">
+        <div class="title">
+          <h2>customers</h2>
+        </div>
+        <div class="customers-container">
+          <!-- single customer -->
+          <div class="customer">
+            <div class="rating">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="far fa-star"></i></span>
+            </div>
+            <h3>We Loved it</h3>
+            <p>
+              I stayed at Hotel Alim for a night, really enjoyed its location in
+              the city centre where everything is within walking distance. The
+              staff was very helpful, breakfast really delicious, and the room
+              nice. I appreciated the luggage room option as well."
+            </p>
+            <img src="images/cus1.jpg" alt="customer image" />
+            <span>Michal, Brazil</span>
+          </div>
+          <!-- end of single customer -->
+          <!-- single customer -->
+          <div class="customer">
+            <div class="rating">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="far fa-star"></i></span>
+            </div>
+            <h3>Comfortable Living</h3>
+            <p>
+              "Nice jazz-evening in Hotel Alim Room was just for my needs for
+              this type of "staycation. Suprisingly fun jazz evening with good
+              tapas table and nice wines. Hotels location is perfect and
+              breakfast really ok with warm dishes and good coffee. What else do
+              you need?"
+            </p>
+            <img src="images/cus2.jpg" alt="customer image" />
+            <span>Mandi, U.K</span>
+          </div>
+          <!-- end of single customer -->
+          <!-- single customer -->
+          <div class="customer">
+            <div class="rating">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="far fa-star"></i></span>
+            </div>
+            <h3>Beautiful stay!</h3>
+            <p>
+              Hotel Alim is a perfect place to stay in Helsinki. The room was
+              very pleasant, it was cozy and clean. Breakfast was excellent and
+              incredibly varied. The hotel team has always been friendly,
+              patient and helpful. That impressed me the most."
+            </p>
+            <img src="images/cus3.jpg" alt="customer image" />
+            <span>Rown, Japan</span>
+          </div>
+          <!-- end of single customer -->
+        </div>
+      </div>
+    </section>
+    <!-- end of body content -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div>
+          <h2>About Us</h2>
+          <p>
+            We are Alim's group of hotel, serve across the country India, There
+            are 18 Hotels of this groups in the country, We the Alim's group
+            Know for delivering the Best among Best Service to our customers.
+          </p>
+          <ul class="social-icons">
+            <li class="flex">
+              <i class="fa-brands fa-twitter"></i>
+            </li>
+            <li class="flex">
+              <i class="fa-brands fa-facebook"></i>
+            </li>
+            <li class="flex">
+              <i class="fa-brands fa-instagram"></i>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Useful Links</h2>
+          <a href="#">Blog</a>
+          <a href="#">Rooms</a>
+          <a href="#">Subscription</a>
+          <a href="#">Gift Card</a>
+        </div>
+
+        <div>
+          <h2>Privacy</h2>
+          <a href="#">Career</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Services</a>
+        </div>
+
+        <div>
+          <h2>Have A Question</h2>
+          <div class="contact-item">
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            <span> 203 Exhibition Road, Patna, Bihar </span>
+          </div>
+          <div class="contact-item">
+            <span>
+              <i class="fas fa-phone-alt"></i>
+            </span>
+            <span> +91 76961-39255 </span>
+          </div>
+          <div class="contact-item">
+            <span>
+              <i class="fas fa-envelope"></i>
+            </span>
+            <span> Faisal4all786@gmail.com </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
+    <script src="./Hotel.js"></script>
+  </body>
+</html>
