@@ -3,6 +3,7 @@ const cancelBtn = document.getElementById('cancel-btn');
 const sideNav = document.getElementById('sidenav');
 const modal = document.getElementById('modal');
 const book = document.getElementById('book-btn');
+// const login = document.getElementById('loginbtn');
 
 
 navBtn.addEventListener('click', function(){
@@ -25,3 +26,9 @@ window.addEventListener('click', function(event){
 book.addEventListener('click', function(){
     alert("Booking succesfull");
 });
+
+// login.addEventListener('click', function(){
+//     sideNav.style.display='block'
+// })
+
+
